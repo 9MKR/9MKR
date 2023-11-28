@@ -1,7 +1,7 @@
 let vies=1
 let points=5
 
-        function clear(){
+        function start(){
         	document.getElementById('deb').innerHTML="<img src='null.svg'></img>";
         	if1();
         }
@@ -136,12 +136,12 @@ let points=5
                 }
                 
                 if (points < 100){
-                        setTimeout("fin()",2000);
+                        setTimeout(() => fin(),2000);
                 }
                 if (vies > 0){
-                        setTimeout("fin()",2000);
+                        setTimeout(() => fin(),2000);
                 }
-                
+               
                 function fin(){
                         document.getElementById('obj1').innerHTML="";
                         document.getElementById('obj2').innerHTML="";
@@ -286,10 +286,10 @@ let points=5
                 }
                 
                 if (points < 100){
-                        setTimeout("fin()",2000);
+                        setTimeout(() => fin(),2000);
                 }
                 if (vies > 0){
-                        setTimeout("fin()",2000);
+                        setTimeout(() => fin(),2000);
                 }
                 
                 function fin(){
